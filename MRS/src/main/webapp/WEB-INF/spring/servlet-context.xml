@@ -10,7 +10,8 @@
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<annotation-driven />
 	
-	
+	<!-- 비밀번호 암호화 객체 등록 -->
+	<beans:bean id="bcryptPasswordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/css/**" location="/resources/css/" />
