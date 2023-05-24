@@ -9,3 +9,7 @@ section {
 footer {
     border: 4px solid skyblue
 }
+
+table {
+	border: 1px solid black;
+}
